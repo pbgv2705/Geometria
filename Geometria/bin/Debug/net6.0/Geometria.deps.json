@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Geometria/1.0.0": {
+        "dependencies": {
+          "Triangulos": "1.0.0",
+          "Vertices": "1.0.0"
+        },
+        "runtime": {
+          "Geometria.dll": {}
+        }
+      },
+      "Triangulos/1.0.0": {
+        "dependencies": {
+          "Vertices": "1.0.0"
+        },
+        "runtime": {
+          "Triangulos.dll": {}
+        }
+      },
+      "Vertices/1.0.0": {
+        "runtime": {
+          "Vertices.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Geometria/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Triangulos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Vertices/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

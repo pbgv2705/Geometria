@@ -1,0 +1,15 @@
+C:\Users\Paula\Documents\Unirio\Geometria\Vertices\bin\Debug\net6.0\Vertices.exe
+C:\Users\Paula\Documents\Unirio\Geometria\Vertices\bin\Debug\net6.0\Vertices.deps.json
+C:\Users\Paula\Documents\Unirio\Geometria\Vertices\bin\Debug\net6.0\Vertices.runtimeconfig.json
+C:\Users\Paula\Documents\Unirio\Geometria\Vertices\bin\Debug\net6.0\Vertices.dll
+C:\Users\Paula\Documents\Unirio\Geometria\Vertices\bin\Debug\net6.0\Vertices.pdb
+C:\Users\Paula\Documents\Unirio\Geometria\Vertices\obj\Debug\net6.0\Vertices.csproj.AssemblyReference.cache
+C:\Users\Paula\Documents\Unirio\Geometria\Vertices\obj\Debug\net6.0\Vertices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paula\Documents\Unirio\Geometria\Vertices\obj\Debug\net6.0\Vertices.AssemblyInfoInputs.cache
+C:\Users\Paula\Documents\Unirio\Geometria\Vertices\obj\Debug\net6.0\Vertices.AssemblyInfo.cs
+C:\Users\Paula\Documents\Unirio\Geometria\Vertices\obj\Debug\net6.0\Vertices.csproj.CoreCompileInputs.cache
+C:\Users\Paula\Documents\Unirio\Geometria\Vertices\obj\Debug\net6.0\Vertices.dll
+C:\Users\Paula\Documents\Unirio\Geometria\Vertices\obj\Debug\net6.0\refint\Vertices.dll
+C:\Users\Paula\Documents\Unirio\Geometria\Vertices\obj\Debug\net6.0\Vertices.pdb
+C:\Users\Paula\Documents\Unirio\Geometria\Vertices\obj\Debug\net6.0\Vertices.genruntimeconfig.cache
+C:\Users\Paula\Documents\Unirio\Geometria\Vertices\obj\Debug\net6.0\ref\Vertices.dll

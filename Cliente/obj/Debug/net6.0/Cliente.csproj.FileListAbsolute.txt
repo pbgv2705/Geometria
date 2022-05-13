@@ -1,0 +1,5 @@
+C:\Users\Paula\Documents\Unirio\Geometria\Cliente\obj\Debug\net6.0\Cliente.csproj.AssemblyReference.cache
+C:\Users\Paula\Documents\Unirio\Geometria\Cliente\obj\Debug\net6.0\Cliente.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paula\Documents\Unirio\Geometria\Cliente\obj\Debug\net6.0\Cliente.AssemblyInfoInputs.cache
+C:\Users\Paula\Documents\Unirio\Geometria\Cliente\obj\Debug\net6.0\Cliente.AssemblyInfo.cs
+C:\Users\Paula\Documents\Unirio\Geometria\Cliente\obj\Debug\net6.0\Cliente.csproj.CoreCompileInputs.cache
