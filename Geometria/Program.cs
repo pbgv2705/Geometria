@@ -53,59 +53,39 @@ namespace ProjetoGeometria
                         dist_euclid = vertice1.Distance(vertice2);
                         Console.WriteLine("Distancia = " + dist_euclid);
                         vertice1.Move(vertice2);
-                        vertice1.Equals(vertice2);
+                        if (vertice1.Equals(vertice2))
+                        {
+                            Console.WriteLine("Os vertices são iguais");
+                        }
+                        else
+                            Console.WriteLine("Os vertices são diferentes");
+
                         break;
                     case 3:
                         // Triangulo
-                        Console.WriteLine("Favor indicar eixo x1: ");
-                        double xx1 = double.Parse(Console.ReadLine());
-                        Console.WriteLine("Favor indicar eixo y1: ");
-                        double yy1 = double.Parse(Console.ReadLine());
 
-                        Console.WriteLine("Favor indicar eixo x2: ");
-                        double xx2 = double.Parse(Console.ReadLine());
-                        Console.WriteLine("Favor indicar eixo y2: ");
-                        double yy2 = double.Parse(Console.ReadLine());
+                        var v1 = new Vertice(2, 4);
+                        var v2 = new Vertice(-1, 1);
+                        var v3 = new Vertice(4, -1);
 
-                        Console.WriteLine("Favor indicar eixo x3: ");
-                        double xx3 = double.Parse(Console.ReadLine());
-                        Console.WriteLine("Favor indicar eixo y3: ");
-                        double yy3 = double.Parse(Console.ReadLine());
+                        var triangul1 = new Triangulo(v1, v2, v3);
 
-                        Vertice vert1 = new Vertice(xx1, yy1);
-                        Vertice vert2 = new Vertice(xx2, yy2);
-                        Vertice vert3 = new Vertice(xx3, yy3);
-
-                        Triangulo triangul1 = new();
-                        double perim = triangul1.Perimetro(vert1, vert2, vert3);
-                        Console.WriteLine("Perimetro = " + perim);
-
-                        Console.WriteLine("Favor indicar eixo x1: ");
-                        double xx12 = double.Parse(Console.ReadLine());
-                        Console.WriteLine("Favor indicar eixo y1: ");
-                        double yy12 = double.Parse(Console.ReadLine());
-
-                        Console.WriteLine("Favor indicar eixo x2: ");
-                        double xx22 = double.Parse(Console.ReadLine());
-                        Console.WriteLine("Favor indicar eixo y2: ");
-                        double yy22 = double.Parse(Console.ReadLine());
-
-                        Console.WriteLine("Favor indicar eixo x3: ");
-                        double xx32 = double.Parse(Console.ReadLine());
-                        Console.WriteLine("Favor indicar eixo y3: ");
-                        double yy32 = double.Parse(Console.ReadLine());
-
-                        Triangulo triangul2 = new();
-                        Vertice vert12 = new Vertice(xx12, yy12);
-                        Vertice vert22 = new Vertice(xx22, yy22);
-                        Vertice vert32 = new Vertice(xx32, yy32);
-
-                        //double perim2 = triangul2.Perimetro(vert1, vert2, vert3);
-                        //Console.WriteLine("Perimetro = " + perim);
+                        var v12 = new Vertice(-3, 4);
+                        var v22 = new Vertice(0, -2);
+                        var v32 = new Vertice(2, 2);
 
 
+                        var triangul2 = new Triangulo(v12, v22, v32);
 
+                        TipoTriangulo tipo = triangul1.Tipo;
 
+                        Console.WriteLine();
+                        Console.WriteLine("=========================================================");
+                        Console.WriteLine("Perimetro: " + triangul1.Perimetro);
+                        Console.WriteLine("Area: " + triangul1.Area);
+                        Console.WriteLine(" Os triangulos são iguais?: " + triangul1.Equals(triangul2));
+                        Console.WriteLine("=========================================================");
+                       
                         break;
                     case 4:
                         // Poligonos

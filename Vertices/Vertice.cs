@@ -33,17 +33,17 @@
             novo_y = this.Y + vertice2.Y;
             Console.WriteLine("O novo ponto é: " + "(" + novo_x + "," + novo_y + ")");
         }
-        public void Equals(Vertice vertice2)
 
+        public override bool Equals(object? obj)
         {
-            bool igual = false;
+            return obj is Vertice vertice &&
+                this.X == vertice.X &&
+                this.Y == vertice.Y;
+        }
 
-            if (this.X == vertice2.X && this.Y == vertice2.Y)
-                igual = true;
-            if (igual)
-                Console.WriteLine("Os dois vértices são iguais");
-            else
-                Console.WriteLine("Os dois vértices são diferentes");
+        public static implicit operator Vertice(double v)
+        {
+            throw new NotImplementedException();
         }
     }
 }
