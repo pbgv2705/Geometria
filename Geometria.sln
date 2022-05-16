@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Triangulos", "Triangulos\Tr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cliente", "Cliente\Cliente.csproj", "{04B177AC-46A3-4F79-8A05-C4CE26AF021C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intervalo", "Intervalo\Intervalo.csproj", "{3E662180-78F7-4169-9C35-BBE9BEC880C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Intervalo", "Intervalo\Intervalo.csproj", "{3E662180-78F7-4169-9C35-BBE9BEC880C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poligonos", "Poligonos\Poligonos.csproj", "{A0872B1B-BA32-4400-802B-8328B583D043}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{3E662180-78F7-4169-9C35-BBE9BEC880C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E662180-78F7-4169-9C35-BBE9BEC880C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E662180-78F7-4169-9C35-BBE9BEC880C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0872B1B-BA32-4400-802B-8328B583D043}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0872B1B-BA32-4400-802B-8328B583D043}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0872B1B-BA32-4400-802B-8328B583D043}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0872B1B-BA32-4400-802B-8328B583D043}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

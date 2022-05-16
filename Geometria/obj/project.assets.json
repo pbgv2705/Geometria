@@ -2,6 +2,29 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "Intervalo/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Intervalo.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Intervalo.dll": {}
+        }
+      },
+      "Poligonos/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Vertices": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Poligonos.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Poligonos.dll": {}
+        }
+      },
       "Triangulos/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -28,6 +51,16 @@
     }
   },
   "libraries": {
+    "Intervalo/1.0.0": {
+      "type": "project",
+      "path": "../Intervalo/Intervalo.csproj",
+      "msbuildProject": "../Intervalo/Intervalo.csproj"
+    },
+    "Poligonos/1.0.0": {
+      "type": "project",
+      "path": "../Poligonos/Poligonos.csproj",
+      "msbuildProject": "../Poligonos/Poligonos.csproj"
+    },
     "Triangulos/1.0.0": {
       "type": "project",
       "path": "../Triangulos/Triangulos.csproj",
@@ -41,6 +74,8 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Intervalo >= 1.0.0",
+      "Poligonos >= 1.0.0",
       "Triangulos >= 1.0.0",
       "Vertices >= 1.0.0"
     ]
@@ -72,6 +107,12 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\Paula\\Documents\\Unirio\\Geometria\\Intervalo\\Intervalo.csproj": {
+              "projectPath": "C:\\Users\\Paula\\Documents\\Unirio\\Geometria\\Intervalo\\Intervalo.csproj"
+            },
+            "C:\\Users\\Paula\\Documents\\Unirio\\Geometria\\Poligonos\\Poligonos.csproj": {
+              "projectPath": "C:\\Users\\Paula\\Documents\\Unirio\\Geometria\\Poligonos\\Poligonos.csproj"
+            },
             "C:\\Users\\Paula\\Documents\\Unirio\\Geometria\\Triangulos\\Triangulos.csproj": {
               "projectPath": "C:\\Users\\Paula\\Documents\\Unirio\\Geometria\\Triangulos\\Triangulos.csproj"
             },

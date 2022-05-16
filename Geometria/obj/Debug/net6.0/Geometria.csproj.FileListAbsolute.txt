@@ -24,3 +24,13 @@ C:\Users\Paula\Documents\Unirio\Geometria\Geometria\bin\Debug\net6.0\Triangulos.
 C:\Users\Paula\Documents\Unirio\Geometria\Geometria\bin\Debug\net6.0\Triangulos.exe
 C:\Users\Paula\Documents\Unirio\Geometria\Geometria\bin\Debug\net6.0\Triangulos.dll
 C:\Users\Paula\Documents\Unirio\Geometria\Geometria\bin\Debug\net6.0\Triangulos.pdb
+C:\Users\Paula\Documents\Unirio\Geometria\Geometria\bin\Debug\net6.0\Intervalo.deps.json
+C:\Users\Paula\Documents\Unirio\Geometria\Geometria\bin\Debug\net6.0\Intervalo.runtimeconfig.json
+C:\Users\Paula\Documents\Unirio\Geometria\Geometria\bin\Debug\net6.0\Intervalo.exe
+C:\Users\Paula\Documents\Unirio\Geometria\Geometria\bin\Debug\net6.0\Poligonos.deps.json
+C:\Users\Paula\Documents\Unirio\Geometria\Geometria\bin\Debug\net6.0\Poligonos.runtimeconfig.json
+C:\Users\Paula\Documents\Unirio\Geometria\Geometria\bin\Debug\net6.0\Poligonos.exe
+C:\Users\Paula\Documents\Unirio\Geometria\Geometria\bin\Debug\net6.0\Intervalo.dll
+C:\Users\Paula\Documents\Unirio\Geometria\Geometria\bin\Debug\net6.0\Poligonos.dll
+C:\Users\Paula\Documents\Unirio\Geometria\Geometria\bin\Debug\net6.0\Intervalo.pdb
+C:\Users\Paula\Documents\Unirio\Geometria\Geometria\bin\Debug\net6.0\Poligonos.pdb

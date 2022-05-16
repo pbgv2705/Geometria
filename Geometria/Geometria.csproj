@@ -8,6 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Intervalo\Intervalo.csproj" />
+    <ProjectReference Include="..\Poligonos\Poligonos.csproj" />
     <ProjectReference Include="..\Triangulos\Triangulos.csproj" />
     <ProjectReference Include="..\Vertices\Vertices.csproj" />
   </ItemGroup>

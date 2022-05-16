@@ -1,6 +1,8 @@
 ﻿using Geometria;
 using Geometria.Exceptions;
 using Triangulos;
+using Poligonos;
+using Intervalo;
 
 namespace ProjetoGeometria
 {
@@ -89,9 +91,35 @@ namespace ProjetoGeometria
                         break;
                     case 4:
                         // Poligonos
+                        var v4 = new Vertice(2, 4);
+                        var v5 = new Vertice(-1, 1);
+                        var v6 = new Vertice(4, -1);
+
+                       // var polig = new Poligono(v4, v5, v6);
+
+
                         break;
                     case 5:
                         // Intervalo
+                        DateTime date1 = new DateTime(2022, 04, 21, 8, 0, 15);
+                        DateTime date2 = new DateTime(2022, 06, 30, 13, 30, 30);
+                        var inter1 = new Interval(date1, date2);
+                        
+                        Console.WriteLine("Duración: " + (int)inter1.Duracao);
+
+                        DateTime date3 = new DateTime(2022, 05, 15,8, 20, 15);
+                        DateTime date4 = new DateTime(2022, 06, 19, 15, 45, 30);
+                        var inter2 = new Interval(date3, date4);
+                        
+                        Console.WriteLine("Intervalo 1: " + date1 + "," + date2);
+                        Console.WriteLine("Intervalo 2: " + date3 + "," + date4);
+                        Console.WriteLine("Los intervalos se intersectam?: " + inter1.TemIntersecao(inter2));
+
+                       
+
+                        //var in1 = new Intervalo(date1, date2);
+
+                        //Console.WriteLine("   {0,-35} {1,20}", "Value of Days Component:", intervalo.Days);
                         break;
                     case 6:
                         // ListaIntervalo
