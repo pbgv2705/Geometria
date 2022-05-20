@@ -34,3 +34,13 @@ C:\Users\Paula\Documents\Unirio\Geometria\Geometria\bin\Debug\net6.0\Intervalo.d
 C:\Users\Paula\Documents\Unirio\Geometria\Geometria\bin\Debug\net6.0\Poligonos.dll
 C:\Users\Paula\Documents\Unirio\Geometria\Geometria\bin\Debug\net6.0\Intervalo.pdb
 C:\Users\Paula\Documents\Unirio\Geometria\Geometria\bin\Debug\net6.0\Poligonos.pdb
+C:\Users\Paula\Documents\Unirio\Geometria\Geometria\bin\Debug\net6.0\ListaIntervalos.deps.json
+C:\Users\Paula\Documents\Unirio\Geometria\Geometria\bin\Debug\net6.0\ListaIntervalos.runtimeconfig.json
+C:\Users\Paula\Documents\Unirio\Geometria\Geometria\bin\Debug\net6.0\ListaIntervalos.exe
+C:\Users\Paula\Documents\Unirio\Geometria\Geometria\bin\Debug\net6.0\ListaIntervalos.dll
+C:\Users\Paula\Documents\Unirio\Geometria\Geometria\bin\Debug\net6.0\ListaIntervalos.pdb
+C:\Users\Paula\Documents\Unirio\Geometria\Geometria\bin\Debug\net6.0\Clients.deps.json
+C:\Users\Paula\Documents\Unirio\Geometria\Geometria\bin\Debug\net6.0\Clients.runtimeconfig.json
+C:\Users\Paula\Documents\Unirio\Geometria\Geometria\bin\Debug\net6.0\Clients.exe
+C:\Users\Paula\Documents\Unirio\Geometria\Geometria\bin\Debug\net6.0\Clients.dll
+C:\Users\Paula\Documents\Unirio\Geometria\Geometria\bin\Debug\net6.0\Clients.pdb

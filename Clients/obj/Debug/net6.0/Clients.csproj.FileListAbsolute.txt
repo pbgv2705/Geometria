@@ -1,0 +1,15 @@
+C:\Users\Paula\Documents\Unirio\Geometria\Clients\bin\Debug\net6.0\Clients.exe
+C:\Users\Paula\Documents\Unirio\Geometria\Clients\bin\Debug\net6.0\Clients.deps.json
+C:\Users\Paula\Documents\Unirio\Geometria\Clients\bin\Debug\net6.0\Clients.runtimeconfig.json
+C:\Users\Paula\Documents\Unirio\Geometria\Clients\bin\Debug\net6.0\Clients.dll
+C:\Users\Paula\Documents\Unirio\Geometria\Clients\bin\Debug\net6.0\Clients.pdb
+C:\Users\Paula\Documents\Unirio\Geometria\Clients\obj\Debug\net6.0\Clients.csproj.AssemblyReference.cache
+C:\Users\Paula\Documents\Unirio\Geometria\Clients\obj\Debug\net6.0\Clients.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paula\Documents\Unirio\Geometria\Clients\obj\Debug\net6.0\Clients.AssemblyInfoInputs.cache
+C:\Users\Paula\Documents\Unirio\Geometria\Clients\obj\Debug\net6.0\Clients.AssemblyInfo.cs
+C:\Users\Paula\Documents\Unirio\Geometria\Clients\obj\Debug\net6.0\Clients.csproj.CoreCompileInputs.cache
+C:\Users\Paula\Documents\Unirio\Geometria\Clients\obj\Debug\net6.0\Clients.dll
+C:\Users\Paula\Documents\Unirio\Geometria\Clients\obj\Debug\net6.0\refint\Clients.dll
+C:\Users\Paula\Documents\Unirio\Geometria\Clients\obj\Debug\net6.0\Clients.pdb
+C:\Users\Paula\Documents\Unirio\Geometria\Clients\obj\Debug\net6.0\Clients.genruntimeconfig.cache
+C:\Users\Paula\Documents\Unirio\Geometria\Clients\obj\Debug\net6.0\ref\Clients.dll

@@ -11,10 +11,6 @@ namespace Triangulos
         private readonly double ladoB;
         private readonly double ladoC;
        
-        public Triangulo()
-        {
-        }
-
         public Triangulo(Vertice v1, Vertice v2, Vertice v3)
         {
             V1 = v1;
@@ -27,7 +23,6 @@ namespace Triangulos
             if ((ladoA + ladoB <= ladoC) || (ladoA + ladoC <= ladoB) ||
                     (ladoB + ladoC <= ladoA))
                 throw new Exception("Os vertices não formam um triangulo");
-
         }
         public override bool Equals(object? obj)
         {
@@ -44,7 +39,6 @@ namespace Triangulos
                 
                 return  ladoA + ladoB + ladoC;
             }
-
         }
         
          public TipoTriangulo Tipo
@@ -67,8 +61,5 @@ namespace Triangulos
             }   
 
          }
-
-       
-
     }
 }

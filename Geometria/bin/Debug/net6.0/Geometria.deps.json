@@ -8,7 +8,9 @@
     ".NETCoreApp,Version=v6.0": {
       "Geometria/1.0.0": {
         "dependencies": {
+          "Clients": "1.0.0",
           "Intervalo": "1.0.0",
+          "ListaIntervalos": "1.0.0",
           "Poligonos": "1.0.0",
           "Triangulos": "1.0.0",
           "Vertices": "1.0.0"
@@ -17,9 +19,19 @@
           "Geometria.dll": {}
         }
       },
+      "Clients/1.0.0": {
+        "runtime": {
+          "Clients.dll": {}
+        }
+      },
       "Intervalo/1.0.0": {
         "runtime": {
           "Intervalo.dll": {}
+        }
+      },
+      "ListaIntervalos/1.0.0": {
+        "runtime": {
+          "ListaIntervalos.dll": {}
         }
       },
       "Poligonos/1.0.0": {
@@ -51,7 +63,17 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Clients/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Intervalo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ListaIntervalos/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

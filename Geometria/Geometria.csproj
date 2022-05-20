@@ -8,7 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Clients\Clients.csproj" />
     <ProjectReference Include="..\Intervalo\Intervalo.csproj" />
+    <ProjectReference Include="..\ListaIntervalos\ListaIntervalos.csproj" />
     <ProjectReference Include="..\Poligonos\Poligonos.csproj" />
     <ProjectReference Include="..\Triangulos\Triangulos.csproj" />
     <ProjectReference Include="..\Vertices\Vertices.csproj" />

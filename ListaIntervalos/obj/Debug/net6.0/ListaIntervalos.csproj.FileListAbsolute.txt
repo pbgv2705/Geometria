@@ -1,0 +1,15 @@
+C:\Users\Paula\Documents\Unirio\Geometria\ListaIntervalos\bin\Debug\net6.0\ListaIntervalos.exe
+C:\Users\Paula\Documents\Unirio\Geometria\ListaIntervalos\bin\Debug\net6.0\ListaIntervalos.deps.json
+C:\Users\Paula\Documents\Unirio\Geometria\ListaIntervalos\bin\Debug\net6.0\ListaIntervalos.runtimeconfig.json
+C:\Users\Paula\Documents\Unirio\Geometria\ListaIntervalos\bin\Debug\net6.0\ListaIntervalos.dll
+C:\Users\Paula\Documents\Unirio\Geometria\ListaIntervalos\bin\Debug\net6.0\ListaIntervalos.pdb
+C:\Users\Paula\Documents\Unirio\Geometria\ListaIntervalos\obj\Debug\net6.0\ListaIntervalos.csproj.AssemblyReference.cache
+C:\Users\Paula\Documents\Unirio\Geometria\ListaIntervalos\obj\Debug\net6.0\ListaIntervalos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paula\Documents\Unirio\Geometria\ListaIntervalos\obj\Debug\net6.0\ListaIntervalos.AssemblyInfoInputs.cache
+C:\Users\Paula\Documents\Unirio\Geometria\ListaIntervalos\obj\Debug\net6.0\ListaIntervalos.AssemblyInfo.cs
+C:\Users\Paula\Documents\Unirio\Geometria\ListaIntervalos\obj\Debug\net6.0\ListaIntervalos.csproj.CoreCompileInputs.cache
+C:\Users\Paula\Documents\Unirio\Geometria\ListaIntervalos\obj\Debug\net6.0\ListaIntervalos.dll
+C:\Users\Paula\Documents\Unirio\Geometria\ListaIntervalos\obj\Debug\net6.0\refint\ListaIntervalos.dll
+C:\Users\Paula\Documents\Unirio\Geometria\ListaIntervalos\obj\Debug\net6.0\ListaIntervalos.pdb
+C:\Users\Paula\Documents\Unirio\Geometria\ListaIntervalos\obj\Debug\net6.0\ListaIntervalos.genruntimeconfig.cache
+C:\Users\Paula\Documents\Unirio\Geometria\ListaIntervalos\obj\Debug\net6.0\ref\ListaIntervalos.dll

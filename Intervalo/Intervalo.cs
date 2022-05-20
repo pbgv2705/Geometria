@@ -29,7 +29,6 @@ namespace Intervalo
         }
         public bool TemIntersecao(Interval interval)
         {
-            //(StartDate1 <= EndDate2) and (StartDate2 <= EndDate1)
             if (this.DataInicial <= interval.DataFinal && this.DataFinal >= interval.DataFinal)
                 return true;
             else return false;
@@ -41,6 +40,5 @@ namespace Intervalo
                 this.DataFinal == interval.DataFinal;
             Console.WriteLine(DataFinal.Date);
         }
-
     }
 }

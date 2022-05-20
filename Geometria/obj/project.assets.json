@@ -2,6 +2,16 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "Clients/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Clients.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Clients.dll": {}
+        }
+      },
       "Intervalo/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -10,6 +20,16 @@
         },
         "runtime": {
           "bin/placeholder/Intervalo.dll": {}
+        }
+      },
+      "ListaIntervalos/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ListaIntervalos.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ListaIntervalos.dll": {}
         }
       },
       "Poligonos/1.0.0": {
@@ -51,10 +71,20 @@
     }
   },
   "libraries": {
+    "Clients/1.0.0": {
+      "type": "project",
+      "path": "../Clients/Clients.csproj",
+      "msbuildProject": "../Clients/Clients.csproj"
+    },
     "Intervalo/1.0.0": {
       "type": "project",
       "path": "../Intervalo/Intervalo.csproj",
       "msbuildProject": "../Intervalo/Intervalo.csproj"
+    },
+    "ListaIntervalos/1.0.0": {
+      "type": "project",
+      "path": "../ListaIntervalos/ListaIntervalos.csproj",
+      "msbuildProject": "../ListaIntervalos/ListaIntervalos.csproj"
     },
     "Poligonos/1.0.0": {
       "type": "project",
@@ -74,7 +104,9 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Clients >= 1.0.0",
       "Intervalo >= 1.0.0",
+      "ListaIntervalos >= 1.0.0",
       "Poligonos >= 1.0.0",
       "Triangulos >= 1.0.0",
       "Vertices >= 1.0.0"
@@ -107,8 +139,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\Paula\\Documents\\Unirio\\Geometria\\Clients\\Clients.csproj": {
+              "projectPath": "C:\\Users\\Paula\\Documents\\Unirio\\Geometria\\Clients\\Clients.csproj"
+            },
             "C:\\Users\\Paula\\Documents\\Unirio\\Geometria\\Intervalo\\Intervalo.csproj": {
               "projectPath": "C:\\Users\\Paula\\Documents\\Unirio\\Geometria\\Intervalo\\Intervalo.csproj"
+            },
+            "C:\\Users\\Paula\\Documents\\Unirio\\Geometria\\ListaIntervalos\\ListaIntervalos.csproj": {
+              "projectPath": "C:\\Users\\Paula\\Documents\\Unirio\\Geometria\\ListaIntervalos\\ListaIntervalos.csproj"
             },
             "C:\\Users\\Paula\\Documents\\Unirio\\Geometria\\Poligonos\\Poligonos.csproj": {
               "projectPath": "C:\\Users\\Paula\\Documents\\Unirio\\Geometria\\Poligonos\\Poligonos.csproj"

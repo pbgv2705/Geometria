@@ -4,26 +4,73 @@ namespace Poligonos
 {
     public class Poligono
     {
+        private readonly List<Poligono> listaVertices;
+
         //public static List<Vertice> Vertices = new List<Vertice>()
         //{
-        //    public Vertice V1;
-        //}
         //public Vertice V1 { get; private set; }
         //public Vertice V2 { get; private set; }
         //public Vertice V3 { get; private set; }
-        //private readonly double ladoA;
-        //private readonly double ladoB;
-        //private readonly double ladoC;
-        //private Vertice v4;
-        //private Vertice v5;
-        //private Vertice v6;
+        //public List<Poligono> listaVertices;
 
-        //public Poligono(Vertice v4, Vertice v5, Vertice v6)
+        public Poligono(List<Poligono> listaVertices)
+        {
+            if (listaVertices.Count < 3)
+            {
+                throw new Exception("O poligono deve ter ao menos 3 vertices");
+            }
+        }
+        public int Nro_Vertices
+        {
+            get
+            {
+                int n = 0;
+                foreach (Poligono poligono in listaVertices)
+                {
+                    n++;
+                }
+                return listaVertices.Count;
+            }
+        }
+        public Poligono Vertice()
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool AddVertice(List<Poligono> listaVertices)
+        {
+            List<Poligono> lista1 = listaVertices.FindAll(delegate (Poligono p) { return p == Vertice(); });
+            if (lista1.Count == 0)
+                listaVertices.Add(Vertice());
+            else
+                throw new Exception("O vertice ja existe");
+            //
+            return true;
+            
+        }
+
+        public bool RemoveVertice(List<Poligono> listaVertices)
+        {
+            listaVertices.Remove(Vertice());
+            if (listaVertices.Count < 3)
+            {
+                throw new Exception("O poligono ficou com menos de 3 vértices");
+            }
+            
+            return true;
+        }
+        //public double Perimetro (List<Poligono> listaVertices)
         //{
-        //    this.v4 = v4;
-        //    this.v5 = v5;
-        //    this.v6 = v6;
+        //    double[] lado = new double[listaVertices.Count];
+        //    foreach (var item in listaVertices)
+        //    {
+
+        //    }
         //}
-    }
+        
+	
+
+	}
+     
 }
     
