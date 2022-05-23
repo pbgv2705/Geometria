@@ -3,10 +3,9 @@ using Geometria.Exceptions;
 using Triangulos;
 using Poligonos;
 using Intervalo;
-//using Clients;
 using System.Globalization;
 using System.Text.RegularExpressions;
-using System.Collections.Generic;
+using ListaIntervalos;
 
 namespace ProjetoGeometria
 {
@@ -32,6 +31,7 @@ namespace ProjetoGeometria
                 switch (sw)
                 {
                     case 1:
+                        // Módulo Pirámides
                         Console.Write("Favor indicar número de niveles ");
                         int nivel = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine();
@@ -39,7 +39,7 @@ namespace ProjetoGeometria
                         piramide.Desenha(nivel);
                         break;
                     case 2:
-                        // Vertice
+                        // Módulo Vertice
                         double dist_euclid = 0;
 
                         Console.WriteLine("Favor indicar eixo x1: ");
@@ -68,13 +68,7 @@ namespace ProjetoGeometria
 
                         break;
                     case 3:
-                        // Triangulo
-                        Console.WriteLine("Favor digite as coordenadas para o vertice 1: ");
-                        Console.WriteLine("Digite o valore de x: ");
-                        int x = int.Parse(Console.ReadLine());
-                        Console.WriteLine("Digite o valore de y: ");
-                        int y = int.Parse(Console.ReadLine());
-
+                        // Módulo Triangulo
                         var v1 = new Vertice(2, 4);
                         var v2 = new Vertice(-1, 1);
                         var v3 = new Vertice(4, -1);
@@ -95,74 +89,147 @@ namespace ProjetoGeometria
                         Console.WriteLine("Area: " + triangul1.Area);
                         Console.WriteLine(" Os triangulos são iguais?: " + triangul1.Equals(triangul2));
                         Console.WriteLine("=========================================================");
-                       
+
                         break;
                     case 4:
-                        // Poligonos
-                        // Incluir dentro de un ciclo que controle nro de poligonos a agregar
-                        bool maisUm = false;
-                        while (maisUm)
-                        {
-                            Console.WriteLine("Favor digite as coordenadas para o vertice 1: ");
-                            Console.Write("Digite o valore de x: ");
-                            int xx = int.Parse(Console.ReadLine());
-                            Console.Write("Digite o valore de y: ");
-                            int yy = int.Parse(Console.ReadLine());
-
-                        }
-
-                        //var v1 = new Vertice(x, y);
-
-                        var v4 = new Vertice(2, 4);
-                        var v5 = new Vertice(-1, 1);
-                        var v6 = new Vertice(4, -1);
-
-                       // var poligono = new Poligono(v4, v5, v6); 
+                        // Módulo Poligonos
+                        bool fin = false;
+                        int n = 0;
 
                         List<Vertice> lista = new List<Vertice>();
-                        lista.Add(v4);
-                        lista.Add(v5);
-                        lista.Add(v6);
-                       // var poligono = new Poligono(List<Vertice> lista);
-                        /// falta terminar!!
-                        Console.WriteLine(lista);
-                       // Console.WriteLine("O perímetro do polígono é: " + poligono.Perimetro);
-                      //  Console.WriteLine($"O polígono tem {poligono.Nro_Vertices} vértices");
 
-                       // var polig = new Poligono(v4, v5, v6);
+                        while (!fin)
+                        {
+                            n++;
+                            Console.WriteLine("Dados do Polígono:");
+                            Console.WriteLine($"Favor digite as coordenadas para o vertice {n}: ");
+                            Console.Write("Digite o valor de x: ");
+                            int xx = int.Parse(Console.ReadLine());
+                            Console.Write("Digite o valor de y: ");
+                            int yy = int.Parse(Console.ReadLine());
+                            var v = new Vertice(xx, yy);
+                            lista.Add(v);
+                            Console.Write("Desea agregar otro vértice? (S/N) ");
+                            string outro = Console.ReadLine();
+                            if (outro == "N" || outro == "n")
+                                fin = true;
+                        }
 
+                        var poligono = new Poligono(lista);
 
+                        int xx1 = 0, yy1 = 0;
+
+                        Console.WriteLine("Deseja Agregar (A) mais um vértice?: ");
+                        string resp1 = Console.ReadLine();
+                        if (resp1 == "A" || resp1 == "a")
+                        {
+                            Console.Write("Indique o eixo x: ");
+                            xx1 = int.Parse(Console.ReadLine());
+                            Console.Write("Indique o eixo y: ");
+                            yy1 = int.Parse(Console.ReadLine());
+                            var vv1 = new Vertice(xx1, yy1);
+
+                            if (resp1 == "A" || resp1 == "a")
+                            {
+                                poligono.AddVertice(lista, vv1);
+                            }
+                        }
+
+                        Console.WriteLine("Deseja Remover (R) mais um vértice?: ");
+                        string resp2 = Console.ReadLine();
+                        if (resp2 == "R" || resp2 == "r")
+                        {
+                            Console.Write("Indique o eixo x: ");
+                            xx1 = int.Parse(Console.ReadLine());
+                            Console.Write("Indique o eixo y: ");
+                            yy1 = int.Parse(Console.ReadLine());
+                            var vv2 = new Vertice(xx1, yy1);
+                            if (resp1 == "R" || resp1 == "r")
+                            {
+                                poligono.RemoveVertice(lista, vv2);
+                            }
+
+                        }
+                        Console.WriteLine();
+                        Console.WriteLine("O perímetro do polígono é: " + poligono.Perimetro(lista));
+                        Console.WriteLine($"O polígono tem {poligono.Nro_Vertices} vértices");
                         break;
+
                     case 5:
                         // Intervalo
                         DateTime date1 = new DateTime(2022, 04, 21, 8, 0, 15);
                         DateTime date2 = new DateTime(2022, 06, 30, 13, 30, 30);
                         var inter1 = new Interval(date1, date2);
-                        
-                        Console.WriteLine("Duración: " + (int)inter1.Duracao);
 
-                        DateTime date3 = new DateTime(2022, 05, 15,8, 20, 15);
-                        DateTime date4 = new DateTime(2022, 06, 19, 15, 45, 30);
+                        Console.WriteLine("Duração: " + (int)inter1.Duracao);
+
+                        DateTime date3 = new DateTime(2022, 01, 15, 8, 20, 15);
+                        DateTime date4 = new DateTime(2022, 02, 19, 15, 45, 30);
+
+                        // Para testar se tem interseção ou são iguais:
+                        //DateTime date3 = new DateTime(2022, 04, 21, 8, 0, 15);
+                        //DateTime date4 = new DateTime(2022, 06, 30, 13, 30, 30);
+
+
                         var inter2 = new Interval(date3, date4);
-                        
+
                         Console.WriteLine("Intervalo 1: " + date1 + "," + date2);
                         Console.WriteLine("Intervalo 2: " + date3 + "," + date4);
-                        Console.WriteLine("Los intervalos se intersectam?: " + inter1.TemIntersecao(inter2));
+                        Console.WriteLine("Os intervalos tem interseção?: " + inter1.TemIntersecao(inter2));
+                        Console.WriteLine("Os intervalos são iguais?: " + inter1.Equals(inter2));
                         break;
 
                     case 6:
-                        // ListaIntervalo
+                        // Modulo ListaIntervalo
+                        List<Interval> listInter = new List<Interval>();
+                        DateTime date5 = new DateTime(2022, 04, 21, 8, 0, 15);
+                        DateTime date6 = new DateTime(2022, 06, 30, 13, 30, 30);
+                        var inter3 = new Interval(date5, date6);
+                        listInter.Add(inter3);
+                        DateTime date7 = new DateTime(2022, 02, 15, 8, 0, 15);
+                        DateTime date8 = new DateTime(2022, 03, 27, 0, 30, 30);
+                        var inter4 = new Interval(date7, date8);
+                        listInter.Add(inter4);
+                        DateTime date9 = new DateTime(2022, 07, 05, 0, 0, 0);
+                        DateTime date10 = new DateTime(2022, 08, 02, 0, 0, 0);
+                        var inter5 = new Interval(date9, date10);
+                        listInter.Add(inter5);
+
+                        ListaIntervalo lIntervalo = new ListaIntervalo(listInter);
+                        Console.WriteLine();
+                        Console.WriteLine("-------------------------------------------------");
+                        Console.Write("Deseja agregar um novo intervalo? (S/N): ");
+                        string str = Console.ReadLine();
+                        if (str == "S" || str == "s" || str == "N" || str == "n")
+                        {
+                            Console.Write("Favor indicar a data de inicio: ");
+                            DateTime dataA = DateTime.Parse(Console.ReadLine());
+                            Console.Write("Favor indicar a data de fin: ");
+                            DateTime dataB = DateTime.Parse(Console.ReadLine());
+                            var inter6 = new Interval(dataA, dataB);
+
+                            if (lIntervalo.AddIntervalo(listInter, inter6))
+                            {
+                                Console.WriteLine("O novo intervalo não pode ser adicionado. Tem interseção");
+                            }
+                            else
+                                Console.WriteLine("O novo intervalo foi adicionado com sucesso");
+                        }
+                        Console.WriteLine();
+                        Console.WriteLine("---------------------------------------------------------");
+                        Console.WriteLine("Lista ordenada de Intervalos:");
+                        Console.WriteLine();
+
+                        lIntervalo.ImprimeIntervalo(listInter);
                         break;
 
                     case 7:
-                        // Cliente
-                       // var cliente = new Cliente();
+                        // Módulo Cliente
                         bool ok = false;
                         string nome = "", data_str = "", edoCivil = "";
                         long cpf = 0;
-                        float renda = 0.0f;
+                        double renda = 0.0f;
                         int depend = 0;
-                       // DateTime data;
 
                         Console.WriteLine("Bem-vindos ao Módulo de Clientes!");
                         Console.WriteLine("==========================================================");
@@ -171,7 +238,7 @@ namespace ProjetoGeometria
                         {
                             Console.Write("Nome: ");
                             nome = Console.ReadLine();
-                            if (nome == null || nome.Length >= 5) 
+                            if (nome == null || nome.Length >= 5)
                                 ok = true;
                             else Console.WriteLine("O nome deve ter ao menos 5 letras");
                         }
@@ -190,7 +257,7 @@ namespace ProjetoGeometria
                         {
                             Console.Write("Data de Nascimento: ");
                             data_str = Console.ReadLine();
-                            string pattern=  "dd/MM/yyyy";
+                            string pattern = "dd/MM/yyyy";
                             DateTime data;
                             // Formato?????
                             if (DateTime.TryParseExact(data_str, pattern, null,
@@ -212,30 +279,27 @@ namespace ProjetoGeometria
                         while (!ok)
                         {
                             Console.Write("Renda Mensal: ");
-                            renda = float.Parse(Console.ReadLine());
-                            Regex rendex = new System.Text.RegularExpressions.Regex(@"^[0-9](,)(\d{2})$");
+                            renda = double.Parse(Console.ReadLine());
+                            Regex rendex = new System.Text.RegularExpressions.Regex(@"^(\d|-)?(\d|.)*\,?\d*$");
                             // No funciona 
                             if (rendex.IsMatch(renda.ToString()))
                             {
                                 ok = true;
-                            }else
+                            }
+                            else
                                 Console.WriteLine("Favor indicar vírgula e 2 casas decimais");
-                            //var rendar = Math.Round(renda, 2);
-                            // Validar virgula!!
                         }
                         ok = false;
                         while (!ok)
                         {
                             Console.Write("Estado Civil (C/S/V/D): ");
                             edoCivil = Console.ReadLine();
-                            Regex rx = new System.Text.RegularExpressions.Regex(@"[\csvd].IgnoreCase{1}$");
-                            ;
-                            
-                            if (rx.IsMatch(edoCivil))
-                            {
-                                Console.WriteLine("Regex = " + edoCivil);
+                            // Regex rx = new System.Text.RegularExpressions.Regex(@"^([c][s][v][d]).IgnoreCase{1}$");
+                            if (edoCivil == "c" || edoCivil == "s" || edoCivil == "d" || edoCivil == "v" ||
+                                edoCivil == "C" || edoCivil == "S" || edoCivil == "D" || edoCivil == "V")
                                 ok = true;
-                            }
+                            else
+                                Console.WriteLine("Formato incorrecto. Favor indicar (C/S/V/D): ");
                         }
                         ok = false;
                         while (!ok)
@@ -248,13 +312,18 @@ namespace ProjetoGeometria
                             }
                             else
                                 ok = true;
-
                         }
 
                         Console.WriteLine();
-                        Console.WriteLine(nome + ", " + cpf + ", " + data_str + ", " +
-                            renda.ToString("F2", CultureInfo.InvariantCulture) + ", " +
-                            edoCivil + ", " + depend);
+                        Console.WriteLine("*************************************************");
+                        Console.WriteLine("DADOS DO CLIENTE:");
+                        Console.WriteLine("Nome: " + nome);
+                        Console.WriteLine("CPF: " + cpf);
+                        Console.WriteLine("Data Nascimento: " + data_str);
+                        Console.WriteLine("Renda: " + renda.ToString("F2"));
+                        Console.WriteLine("Estado Civil: " + edoCivil);
+                        Console.WriteLine("Dependentes: " + depend);
+                        Console.WriteLine("*************************************************");
 
                         break;
                     default:

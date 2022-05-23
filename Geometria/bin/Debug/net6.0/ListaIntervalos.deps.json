@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "ListaIntervalos/1.0.0": {
+        "dependencies": {
+          "Intervalo": "1.0.0"
+        },
         "runtime": {
           "ListaIntervalos.dll": {}
+        }
+      },
+      "Intervalo/1.0.0": {
+        "runtime": {
+          "Intervalo.dll": {}
         }
       }
     }
   },
   "libraries": {
     "ListaIntervalos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Intervalo/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

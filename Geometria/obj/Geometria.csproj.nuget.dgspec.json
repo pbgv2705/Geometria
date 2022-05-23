@@ -208,7 +208,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Paula\\Documents\\Unirio\\Geometria\\Intervalo\\Intervalo.csproj": {
+                "projectPath": "C:\\Users\\Paula\\Documents\\Unirio\\Geometria\\Intervalo\\Intervalo.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

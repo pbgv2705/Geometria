@@ -30,6 +30,9 @@
         }
       },
       "ListaIntervalos/1.0.0": {
+        "dependencies": {
+          "Intervalo": "1.0.0"
+        },
         "runtime": {
           "ListaIntervalos.dll": {}
         }

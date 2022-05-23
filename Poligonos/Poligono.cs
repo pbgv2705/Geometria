@@ -4,31 +4,26 @@ namespace Poligonos
 {
     public class Poligono
     {
-        private readonly List<Poligono> listaVertices;
+        private readonly List<Vertice> listaVertices;
+        public Vertice V1 { get; set; }
 
-        //public static List<Vertice> Vertices = new List<Vertice>()
-        //{
-        //public Vertice V1 { get; private set; }
-        //public Vertice V2 { get; private set; }
-        //public Vertice V3 { get; private set; }
-        //public List<Poligono> listaVertices;
-
-        public Poligono(List<Poligono> listaVertices)
+        public Poligono(List<Vertice> listaVertices)
         {
+            this.listaVertices = listaVertices;
             if (listaVertices.Count < 3)
             {
                 throw new Exception("O poligono deve ter ao menos 3 vertices");
             }
         }
+        public Poligono(List<Vertice> listaVertices, Vertice vertice) : this(listaVertices)
+        {
+            V1 = vertice;
+        }
+
         public int Nro_Vertices
         {
             get
             {
-                int n = 0;
-                foreach (Poligono poligono in listaVertices)
-                {
-                    n++;
-                }
                 return listaVertices.Count;
             }
         }
@@ -37,40 +32,43 @@ namespace Poligonos
             throw new NotImplementedException();
         }
 
-        public bool AddVertice(List<Poligono> listaVertices)
+        public bool AddVertice(List<Vertice> listaVertices, Vertice vertice)
         {
-            List<Poligono> lista1 = listaVertices.FindAll(delegate (Poligono p) { return p == Vertice(); });
-            if (lista1.Count == 0)
-                listaVertices.Add(Vertice());
+            bool verticeExiste;
+            verticeExiste = listaVertices.Contains(vertice);
+            if (!verticeExiste)
+            {
+                listaVertices.Add(vertice);
+                return true;
+            }
             else
+            {
                 throw new Exception("O vertice ja existe");
-            //
-            return true;
-            
+                return false;
+            }
+
         }
 
-        public bool RemoveVertice(List<Poligono> listaVertices)
+        public bool RemoveVertice(List<Vertice> listaVertices, Vertice vertice)
         {
-            listaVertices.Remove(Vertice());
+            listaVertices.Remove(vertice);
             if (listaVertices.Count < 3)
             {
                 throw new Exception("O poligono ficou com menos de 3 vértices");
             }
-            
+
             return true;
         }
-        //public double Perimetro (List<Poligono> listaVertices)
-        //{
-        //    double[] lado = new double[listaVertices.Count];
-        //    foreach (var item in listaVertices)
-        //    {
+        public double Perimetro(List<Vertice> listaVertices)
+        {
+            double soma = 0;
+            for (int i = 0; i < (listaVertices.Count - 1); i++)
+            {
+                soma += listaVertices[i].Distance(listaVertices[i + 1]);
+            }
+            soma += listaVertices[0].Distance(listaVertices[listaVertices.Count - 1]);
+            return soma;
+        }
+    }
 
-        //    }
-        //}
-        
-	
-
-	}
-     
 }
-    

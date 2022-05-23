@@ -26,7 +26,6 @@ namespace Geometria
             this.N = n;
 
         }
-
         public virtual void Desenha(int nLin)
         {
             int lactual, esp, aster, z;
@@ -51,7 +50,6 @@ namespace Geometria
                 }
                 Console.WriteLine();
             }
-
         }
     }
 }

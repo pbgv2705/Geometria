@@ -1,5 +1,4 @@
 ﻿namespace Geometria
-
 {
     public class Vertice
     {

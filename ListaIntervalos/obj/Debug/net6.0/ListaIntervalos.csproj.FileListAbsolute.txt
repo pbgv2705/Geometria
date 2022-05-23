@@ -13,3 +13,9 @@ C:\Users\Paula\Documents\Unirio\Geometria\ListaIntervalos\obj\Debug\net6.0\refin
 C:\Users\Paula\Documents\Unirio\Geometria\ListaIntervalos\obj\Debug\net6.0\ListaIntervalos.pdb
 C:\Users\Paula\Documents\Unirio\Geometria\ListaIntervalos\obj\Debug\net6.0\ListaIntervalos.genruntimeconfig.cache
 C:\Users\Paula\Documents\Unirio\Geometria\ListaIntervalos\obj\Debug\net6.0\ref\ListaIntervalos.dll
+C:\Users\Paula\Documents\Unirio\Geometria\ListaIntervalos\bin\Debug\net6.0\Intervalo.deps.json
+C:\Users\Paula\Documents\Unirio\Geometria\ListaIntervalos\bin\Debug\net6.0\Intervalo.runtimeconfig.json
+C:\Users\Paula\Documents\Unirio\Geometria\ListaIntervalos\bin\Debug\net6.0\Intervalo.exe
+C:\Users\Paula\Documents\Unirio\Geometria\ListaIntervalos\bin\Debug\net6.0\Intervalo.dll
+C:\Users\Paula\Documents\Unirio\Geometria\ListaIntervalos\bin\Debug\net6.0\Intervalo.pdb
+C:\Users\Paula\Documents\Unirio\Geometria\ListaIntervalos\obj\Debug\net6.0\ListaIntervalos.csproj.CopyComplete

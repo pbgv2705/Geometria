@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Intervalo
+﻿ namespace Intervalo
 {
     public class Interval
     {
@@ -29,7 +23,7 @@ namespace Intervalo
         }
         public bool TemIntersecao(Interval interval)
         {
-            if (this.DataInicial <= interval.DataFinal && this.DataFinal >= interval.DataFinal)
+            if (this.DataInicial <= interval.DataInicial && this.DataFinal >= interval.DataFinal)
                 return true;
             else return false;
         }
@@ -38,7 +32,6 @@ namespace Intervalo
             return obj is Interval interval &&
                 this.DataInicial == interval.DataInicial &&
                 this.DataFinal == interval.DataFinal;
-            Console.WriteLine(DataFinal.Date);
         }
     }
 }

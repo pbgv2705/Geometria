@@ -22,20 +22,9 @@ namespace Cliente
             Dependentes = dependentes;
         }
 
-        public static bool WithRegEx(string stringToVerify)
-        {
-            return Regex.IsMatch(stringToVerify, @"^[a-zA-Z]+$");
-        }
-
-        public void Imprime()
-        {
-            string str = Nome.Length.ToString();
-            if (Nome.Length < 5)
-            {
-                //throw new DomainException("O nome deve ter ao menos 5 carateres");
-
-            }
-        }
-
+        //public static bool WithRegEx(string stringToVerify)
+        //{
+        //    return Regex.IsMatch(stringToVerify, @"^[a-zA-Z]+$");
+        //}
     }
 }
